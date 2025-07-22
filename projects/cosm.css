@@ -1,0 +1,633 @@
+body{
+    margin: 0%;
+    background: rgb(204, 203, 203);
+}
+.back-image{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img1.jpg);
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-top: 13%;
+    padding-bottom: 17%;
+}
+.back-text{
+    text-align: center;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    text-transform: uppercase;
+    line-height: 35%;
+    height: 50%;
+    
+}
+.back-text h1{
+    font-size: 50px;
+    font-weight: 600;
+    color: rgb(25, 181, 219);
+}
+.back-text p{
+    text-transform: lowercase;
+}
+
+nav{
+    position: fixed;
+    right: 0%;
+    left: 0%;
+    top: 0%;
+    bottom: 92%;
+    border: none;
+    background-color: rgb(130, 135, 139);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0.1);
+    z-index: 999;
+}
+.label{
+    height: 50%;
+    color: rgb(161, 247, 235);
+    align-items: flex-start;
+    width: 950px;
+    padding-left: 15px;
+    
+}
+nav ul{
+    width: 98%;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height: 50px;
+}
+
+nav a{
+    height: 50%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    columns: black;
+}
+nav a:hover{
+    background-color: white;
+    border-radius: 10%;
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #beb9b9;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+} 
+.menu-button{
+    display: none;
+}
+@media(max-width: 763px) {
+   .hideOnMobile{
+    display: none;
+   } 
+   .menu-button{
+    display: block;
+   }
+}
+@media(max-width:400px) {
+    .sidebar{
+        width: 100%;
+    }
+    
+}
+.cv{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding-left: 150px;
+    padding-top: 20px;
+}
+
+.container-lotion{
+    position: relative;
+    margin-top: 5%;
+}
+.lotion-img{
+    grid-template-columns: 500px;
+    mix-blend-mode: multiply;
+    display: block;
+    position: relative;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: 2%;
+    height: 75%;
+    width: 57%;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.1);
+}
+.lotion p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    line-height: 45px;
+    font-weight: 300;
+    width: 350px;
+    position: absolute;
+    text-align: left;
+    padding: auto;
+    top: 20px;
+    left: 2%;
+    margin: 0;
+}
+
+@media (max-width: 1200px) {
+    .lotion p {
+        font-size: 40px;
+        line-height: 35px;
+        width: 300px;
+    }
+}
+
+@media (max-width: 992px) {
+    .lotion p {
+        font-size: 30px;
+        line-height: 25px;
+        width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .lotion p {
+        font-size: 20px;
+        line-height: 20px;
+        width: 150px;
+    }
+}
+.lotion h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 17px;
+    margin: 40px;
+    position: absolute;
+    width: 150px;
+    left: 10%;
+    top: 65%;
+    color: rgb(89, 92, 92);
+}
+@media (max-width: 1200px) {
+    .lotion h4 {
+        font-size: 12px;
+        line-height: 10px;
+        top: 30%;
+        left: 20%;
+        border: none;
+        margin-right: 2%;
+        width: 150px;
+    }
+}
+
+@media (max-width: 992px) {
+    .lotion h4 {
+        font-size: 12px;
+        line-height: 10px;
+        top: 30%;
+        right: 0%;
+        border: none;
+        margin-right: 2%;
+        width: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .lotion h4 {
+        font-size: 60%;
+        line-height: 10px;
+        top: 60%;
+        left: 2%;
+        border: none;
+        margin-right: 2%;
+        width: 110px;
+    }
+}
+.lotion{
+    position: relative;
+}
+.bodylotion {
+    mix-blend-mode: multiply;
+    max-width: 17%; /* Set max-width to make the image responsive */
+    height: auto; /* Set height to auto to maintain aspect ratio */
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    transform: translateX(-30%, -30%);
+}
+
+@media (max-width: 1200px) {
+    .bodylotion {
+        max-width: 60%;
+    }
+}
+
+@media (max-width: 992px) {
+    .bodylotion {
+        max-width: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    .bodylotion {
+        max-width: 20%;
+    }
+}
+.lotion1{
+    position: relative;
+    
+}
+.lotion-img-two{
+    grid-template-columns: 500px;
+    mix-blend-mode: multiply;
+    display: block;
+    position: relative;
+    border-radius: 4px;
+    margin-left: 2%;
+    margin-right: auto;
+    width: 60%;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.1);
+}
+.lotion1 p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: rgb(37, 36, 36);
+    width: 270px;
+    position: absolute;
+    top: 10px;
+    right: 10%;
+}
+@media (max-width: 1200px) {
+    .lotion1 p {
+        font-size: 30px;
+        line-height: 30px;
+        width: 230px;
+    }
+}
+
+@media (max-width: 992px) {
+    .lotion1 p {
+        font-size: 20px;
+        line-height: 20px;
+        width: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .lotion1 p {
+        font-size: 20px;
+        line-height: 20px;
+        width: 140px;
+    }
+}
+.lotion1 h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 17px;
+    margin: 40px;
+    position: absolute;
+    width: 230px;
+    right: 0%;
+    top: 40%;
+    color: rgb(89, 92, 92);
+}
+@media (max-width: 1200px) {
+    .lotion1 h4 {
+        font-size: 12px;
+        line-height: 10px;
+        top: 30%;
+        right: 0%;
+        border: none;
+        margin-right: 2%;
+        width: 150px;
+    }
+}
+
+@media (max-width: 992px) {
+    .lotion1 h4 {
+        font-size: 12px;
+        line-height: 10px;
+        top: 30%;
+        right: 0%;
+        border: none;
+        margin-right: 2%;
+        width: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .lotion1 h4 {
+        font-size: 60%;
+        line-height: 10px;
+        top: 30%;
+        right: 0%;
+        border: none;
+        margin-right: 2%;
+        width: 150px;
+    }
+}
+.hair-lotion{
+    mix-blend-mode: multiply;
+    position: absolute;
+    height: 60%;
+    width: 15%;
+    top: 38%;
+    right: 20%;
+}
+@media (max-width: 1200px) {
+    .hair-lotion {
+        max-width: 10%;
+        right: 26%;
+
+    }
+}
+
+@media (max-width: 992px) {
+    .hair-lotion {
+        max-width: 10%;
+        right: 26%;
+    }
+}
+
+@media (max-width: 768px) {
+    .hair-lotion {
+        max-width: 10%;
+        right: 26%;
+    }
+}
+.lotion2{
+    position: relative;
+}
+.lotion-img2{
+    grid-template-columns: 500px;
+    mix-blend-mode: multiply;
+    display: block;
+    position: relative;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: 2%;
+    height: 40%;
+    width: 52%;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.1);
+}
+.lotion2 p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: rgb(37, 36, 36);
+    width: 270px;
+    position: absolute;
+    left: 30%;
+    top: 0%;
+}
+@media (max-width: 1200px) {
+    .lotion2 p {
+        font-size: 30px;
+        line-height: 30px;
+        width: 230px;
+    }
+}
+
+@media (max-width: 992px) {
+    .lotion2 p {
+        font-size: 20px;
+        line-height: 20px;
+        width: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .lotion2 p {
+        font-size: 20px;
+        line-height: 20px;
+        width: 140px;
+    }
+}
+.facelotion{
+    mix-blend-mode: multiply;
+    position: absolute;
+    height: 60%;
+    width: 20%;
+    top: 38%;
+    left: 4%;
+}
+@media (max-width: 1200px) {
+    .facelotion {
+        max-width: 20%;
+        left: 4%;
+
+    }
+}
+
+@media (max-width: 992px) {
+    .facelotion {
+        max-width: 20%;
+        left: 4%;
+    }
+}
+
+@media (max-width: 768px) {
+    .facelotion {
+        max-width: 20%;
+        left: 4%;
+    }
+}
+.lotion2 h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 17px;
+    font-weight: 100px;
+    margin: 40px;
+    position: absolute;
+    width: 250px;
+    left: 20%;
+    top: 40%;
+    color: rgb(96, 99, 99);
+}
+@media (max-width: 1200px) {
+    .lotion2 h4 {
+        font-size: 16px;
+        line-height: 10px;
+        top: 30%;
+        border: none;
+        margin-right: 2%;
+        width: 150px;
+    }
+}
+
+@media (max-width: 992px) {
+    .lotion2 h4 {
+        font-size: 16px;
+        line-height: 10px;
+        top: 30%;
+        border: none;
+        margin-right: 2%;
+        width: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .lotion2 h4 {
+        font-size: 60%;
+        line-height: 13px;
+        top: 30%;
+        left: 15%;
+        border: none;
+        margin-right: 2%;
+        width: 150px;
+    }
+}
+.lotion3{
+    position: relative;
+}
+.lotion-img-three{
+    grid-template-columns: 500px;
+    mix-blend-mode: multiply;
+    display: block;
+    position: relative;
+    border-radius: 4px;
+    margin-left: 2%;
+    margin-right: auto;
+    width: 57%;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.1);
+}
+.lotion3 p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: rgb(37, 36, 36);
+    width: 370px;
+    position: absolute;
+    top: 0%;
+    right: 17%;
+}
+@media (max-width: 1200px) {
+    .lotion3 p {
+        font-size: 30px;
+        line-height: 30px;
+        width: 230px;
+    }
+}
+
+@media (max-width: 992px) {
+    .lotion3 p {
+        font-size: 20px;
+        line-height: 20px;
+        width: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .lotion3 p {
+        font-size: 20px;
+        line-height: 20px;
+        width: 230px;
+        right: 8%;
+    }
+}
+.lotion3 h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 17px;
+    margin: 40px;
+    position: absolute;
+    width: 250px;
+    right: 15%;
+    top: 40%;
+    color: rgb(88, 95, 95);
+}
+@media (max-width: 1200px) {
+    .lotion3 h4 {
+        font-size: 12px;
+        line-height: 10px;
+        top: 30%;
+        right: 0%;
+        border: none;
+        margin-right: 2%;
+        width: 150px;
+    }
+}
+
+@media (max-width: 992px) {
+    .lotion3 h4 {
+        font-size: 12px;
+        line-height: 10px;
+        top: 30%;
+        right: 0%;
+        border: none;
+        margin-right: 2%;
+        width: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .lotion3 h4 {
+        font-size: 60%;
+        line-height: 10px;
+        top: 26%;
+        right: 2%;
+        border: none;
+        margin-right: 2%;
+        width: 200px;
+    }
+}
+.makeup{
+    mix-blend-mode: multiply;
+    position: absolute;
+    border-radius: 5px;
+    height: 40%;
+    width: 20%;
+    top: 45%;
+    right: 2%;
+}
+@media (max-width: 1200px) {
+    .makeup {
+        max-width: 10%;
+        right: 2%;
+
+    }
+}
+
+@media (max-width: 992px) {
+    .makeup {
+        max-width: 10%;
+        right: 2%;
+    }
+}
+
+@media (max-width: 768px) {
+    .makeup {
+        max-width: 20%;
+        right: 2%;
+        top: 55%;
+    }
+}
