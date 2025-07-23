@@ -470,7 +470,7 @@ nav li:first-child {
     margin-bottom: 20px;
     animation: floatUpDown 3s infinite ease-in-out;
     border-radius: 5%;
-    mix-blend-mode: soft-light;
+    filter: brightness(80%);
 }
 
 @keyframes floatUpDown {
