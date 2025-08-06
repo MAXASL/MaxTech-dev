@@ -500,6 +500,8 @@ nav li:first-child {
     }
 }
 
+/* about css */
+
 .about{
     display: flex;
     flex-direction: column;
@@ -561,30 +563,6 @@ nav li:first-child {
 
     }
     
-}
-
-.img-web{
-    position: relative;
-    grid-template-columns: 1fr 300px;
-    column-gap: 50px;
-    row-gap: 50px;
-}
-
-.img-web img{
-    width: 40%;
-    height: 40%;
-    margin: 40px;
-    padding: 20px;
-}
-
-.creation img{
-   max-width: 100%;
-    height: auto;
-    padding-top: 20px;
-}
-
-.img-web.creation img{
-    border-radius: 10px;
 }
 
 .skilled {
