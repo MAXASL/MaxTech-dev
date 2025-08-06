@@ -1162,12 +1162,13 @@ footer h4{
         text-align: center;
         justify-content: stretch;
         width: 280px;
+        font-size: 10px;
         margin: auto;
     }
     .social-icons-footer{
         width: 100px;
-        margin-left: 65%;
-        margin-top: -2%;
+        margin-left: 60%;
+        margin-top: -2.5%;
     }
 
     footer h4{
