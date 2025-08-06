@@ -1106,7 +1106,7 @@ footer {
 
 footer .logo{
     letter-spacing: 0.5px;
-    color: rgb(34, 207, 184);;
+    color: lightslategray;
     font-weight: 600;
 
 }
@@ -1167,7 +1167,7 @@ footer h4{
     .social-icons-footer{
         width: 100px;
         margin-left: 65%;
-        margin-top: -3%;
+        margin-top: -2%;
     }
 
     footer h4{
@@ -1175,5 +1175,12 @@ footer h4{
         padding-top: 5px;
         padding-left: -5px;
         font-size: 12px;
+    }
+    footer .logo{
+        font-family: 'Courier New', Courier, monospace;
+        font-style: normal;
+        font-weight: 600;
+        font-size: medium;
+
     }
 }
